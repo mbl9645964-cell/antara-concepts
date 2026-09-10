@@ -1,10 +1,12 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-export default defineConfig({
+export default defineConfig(({ command }) => ({
+  // Project page lives at /antara-concepts/ on GitHub Pages.
+  base: command === 'build' ? '/antara-concepts/' : '/',
   plugins: [react()],
   server: {
     port: 5178,
     host: true,
   },
-})
+}))
