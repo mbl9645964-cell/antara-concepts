@@ -14,8 +14,8 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-5">
             <a href="#top" onClick={go('#top')} className="flex items-baseline gap-2">
-              <span className="font-serif text-3xl text-charcoal">Antara</span>
-              <span className="text-[10px] uppercase tracking-label text-umber">Concepts</span>
+              <span className="font-serif text-3xl text-charcoal">{studio.logoMain}</span>
+              <span className="text-[10px] uppercase tracking-label text-umber">{studio.logoSub}</span>
             </a>
             <p className="mt-6 max-w-xs font-serif text-2xl font-light leading-snug text-charcoal">
               {studio.tagline}
@@ -66,7 +66,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-16 flex flex-col gap-4 border-t border-charcoal/10 pt-8 text-[11px] uppercase tracking-widest text-umber sm:flex-row sm:items-center sm:justify-between">
-          <span>© {year} Antara Concepts. All rights reserved.</span>
+          <span>© {year} {studio.name}. All rights reserved.</span>
           <div className="flex gap-8">
             <a href="#" className="link-underline">
               Privacy Policy

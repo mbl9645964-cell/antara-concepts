@@ -226,7 +226,14 @@ export const nav = [
 
 export const studio = {
   name: 'Antara Concepts',
+  logoMain: 'Antara',
+  logoSub: 'Concepts',
   tagline: 'Designing Spaces That Feel Like Home.',
+  heroEyebrow: 'Interior Design Studio · Faridabad',
+  heroLines: ['Interiors,', 'designed', 'around you.'],
+  heroFoot: 'Est. Faridabad · Delhi NCR',
+  introLead:
+    'Antara Concepts is a Faridabad interior design studio crafting personalized homes and workspaces across Delhi NCR. We design in warm, timeless materials — favouring restraint, natural light and craftsmanship over trend — so that every space feels considered, collected and unmistakably yours.',
   address: 'SCF 100–104, HBH Colony, Sector 28, Faridabad, Haryana 121008',
   phoneDisplay: '+91 70110 07133',
   phoneHref: '+917011007133',

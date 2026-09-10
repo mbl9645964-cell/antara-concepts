@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
-import { img, responsive } from '../data/content'
+import { img, responsive, studio } from '../data/content'
 import { EASE } from './primitives'
 
 export default function Hero() {
@@ -40,11 +40,11 @@ export default function Hero() {
             transition={{ duration: 1, ease: EASE, delay: 0.5 }}
             className="mb-8 text-[11px] uppercase tracking-label text-ivory/70"
           >
-            Interior Design Studio · Faridabad
+            {studio.heroEyebrow}
           </motion.p>
 
           <h1 className="display max-w-[15ch] text-ivory text-[15vw] leading-[0.92] sm:text-[11vw] lg:text-[7.6vw]">
-            {['Interiors,', 'designed', 'around you.'].map((line, i) => (
+            {studio.heroLines.map((line, i) => (
               <span key={i} className="block overflow-hidden">
                 <motion.span
                   className="block"
@@ -97,7 +97,7 @@ export default function Hero() {
           className="shell flex items-center justify-between pb-8 text-ivory/60"
         >
           <span className="hidden text-[10px] uppercase tracking-label sm:block">
-            Est. Faridabad · Delhi NCR
+            {studio.heroFoot}
           </span>
           <div className="flex items-center gap-3 text-[10px] uppercase tracking-label">
             <span>Scroll</span>

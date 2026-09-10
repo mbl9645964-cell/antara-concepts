@@ -42,15 +42,15 @@ export default function Navbar() {
             className={`group flex items-baseline gap-2 transition-colors duration-500 ${
               solid ? 'text-charcoal' : 'text-ivory'
             }`}
-            aria-label="Antara Concepts — home"
+            aria-label={`${studio.name} — home`}
           >
-            <span className="font-serif text-2xl leading-none tracking-tight">Antara</span>
+            <span className="font-serif text-2xl leading-none tracking-tight">{studio.logoMain}</span>
             <span
               className={`hidden text-[10px] uppercase tracking-label sm:inline ${
                 solid ? 'text-umber' : 'text-ivory/70'
               }`}
             >
-              Concepts
+              {studio.logoSub}
             </span>
           </button>
 

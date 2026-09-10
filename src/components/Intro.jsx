@@ -1,3 +1,4 @@
+import { studio } from '../data/content'
 import { Reveal, RevealLines } from './primitives'
 
 export default function Intro() {
@@ -29,10 +30,7 @@ export default function Intro() {
           </Reveal>
           <Reveal className="lg:col-span-6 lg:col-start-6" delay={0.12}>
             <p className="text-lg font-light leading-relaxed text-cocoa sm:text-xl">
-              Antara Concepts is a Faridabad interior design studio crafting personalized homes and
-              workspaces across Delhi NCR. We design in warm, timeless materials — favouring restraint,
-              natural light and craftsmanship over trend — so that every space feels considered,
-              collected and unmistakably yours.
+              {studio.introLead}
             </p>
           </Reveal>
         </div>
